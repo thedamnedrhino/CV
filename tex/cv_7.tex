@@ -1,0 +1,274 @@
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter 
+% LaTeX Template
+% Version 1.3 (29/10/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\newcommand{\MYhref}[3][blue]{\href{#2}{\color{#1}{#3}}}%
+
+\usepackage[scale=0.86]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Farzad} % Your first name
+\familyname{Sharifbakhtiar} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+%\title{Curriculum Vitae}
+\address{Montreal, QC, Canada}{}
+\mobile{+1 (514) 577 6105}
+%\phone{+98 26 32826340}
+%\fax{(000) 111 1113}
+\email{farzadsbakhtiar@gmail.com}
+%\email{ehsan_hoseinzade@sfu.ac}
+%\homepage{www.researchgate.net/profile/Ehsan_Hoseinzade2}{Researchgate}
+% \homepageB{www.researchgate.net/profile/Ehsan_Hoseinzade2}{Researchgate1}
+
+% \extrainfo{\homepagesymbol\httplink{https://scholar.google.com/citations?user=etOQcg8AAAAJ&hl=en}}
+
+ % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+%\photo[70pt][0.4pt]{pictures/Ehsan.jpg} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+\iffalse
+\clearpage
+
+\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+\date{\today} % Letter date
+\opening{Dear Sir or Madam,} % Opening greeting
+\closing{Sincerely yours,} % Closing phrase
+\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+\makelettertitle % Print letter title
+
+\lipsum[1-2] % Dummy text
+\lipsum[4] % Dummy text
+
+\makeletterclosing % Print letter signature
+
+\newpage
+\fi
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
+\makecvtitle % Print the CV title
+
+\iffalse
+
+\vspace{-5mm} %5mm vertical space
+
+More than 6 years of experience in Software Development with different programming languages. I have a strong experience in back-end and front-end development and ready to work in a challenging and dynamic environment. Hands-on knowledge of Amazon AWS and Microsoft Azure cloud services. Ability to work independently and as part of a team, work under pressure and maintain focus.
+
+\fi
+%----------------------------------------------------------------------------------------
+%	SKILL SET SECTION
+%----------------------------------------------------------------------------------------
+\section{Technical Skills}
+\cvitem{\textbf{Strengths}}{Python, OOP, SQL, Testing, Algorithms, Product Focus.}
+\vspace{1mm} %5mm vertical space
+\cvitem{\textbf{Practical Experience}}{\vspace{} Javascript, GCP, HTML, PHP, Pytorch, Flask, Deep Learning, NLP, NoSQL, Parallelization.}
+% \cvitem{\textbf{Other Position-related}}{\vspace{7.5pt} Git, Gitlab, Pycharm, Unix-based Environments, Bash scripting, JSON.}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\cventry{2018--2020}{M.Sc. in Computing Science}{Simon Fraser University}{CGPA 3.69/4}{}{}
+\cventry{2012--2014}{B.Sc in Computer Engineering}{Sharif University of Technology}{CGPA 3.13/4}{}{}%
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+%\subsection{Vocational}
+\cventry{Jun.2021--May.2022}{ML Developer}{\textsc{Mosaicapp} -- HR Management Software}{Vancouver}{British Columbia}{
+% \newline{}\newline{}
+% Detailed achievements:
+\textit{Python, Pytest, SQL, GCP, Pandas, Asyncio, NLP}
+\begin{itemize}
+\item Developed the product’s core recommendation system.
+\item Developed the backend data to ML model pipeline.
+\item Implemented NLP pipeline V0.
+\item Created a test suite for the ML framework.
+\end{itemize}
+%\item \textbf{Tools}: Visual Studio, Azure Pipelines, Git, Postman Client
+}
+
+%------------------------------------------------
+\cventry{Jan.2018--May.2018}{Software Developer}{\textsc{Videoboom} -- AdTech}{Tehran}{Iran}{
+\textit{Python, MongoDB, OpenRTB, Microservices, REST API}
+\begin{itemize}
+\item Designed a microservice real-time video ad auctioning server.
+\item Developed the DSP (demand side supplier)  microservice.
+\end{itemize}
+}
+%------------------------------------------------
+%\subsection{Vocational}
+\cventry{Oct.2017--Jan.2018}{Software Developer}{\textsc{Peeyade} -- End-user Application}{Tehran}{Iran}{
+% \newline{}\newline{}
+% Detailed achievements:
+\textit{Python, MongoDB, Elasticsearch, REST API}
+\begin{itemize}
+\item Built a search system for locations/events/content.
+\item Exposed a REST API.
+\end{itemize}
+}
+
+%------------------------------------------------
+\cventry{Jan.2013--Oct.2017}{Software Developer}{\textsc{Tezlabs} -- ERP Software}{Tehran}{Iran}{
+% \newline{}\newline{}
+% Detailed achievements:
+\textit{PHP, Javascript, MySQL, Symfony}
+\begin{itemize}
+\item Reengineered the legacy ERP system and its underlying framework. 
+\item Turned coupled PHP5 code into object oriented PHP7 code.
+\item Held workshops on OOP and the new ERP framework.
+\item Created a test suite for the system. 
+\end{itemize}
+}
+
+\section{Etc.}
+\cvitem{}{\textbf{Languages:} Persian, English, German.}
+\cvitem{}{\textbf{Free Study:} Mathematics, Psychology.}
+\cvitem{}{\textbf{Rest:} Nature, Swimming, Food, Music, Dance.}
+\iffalse
+%----------------------------------------------------------------------------------------
+%	SELECTED PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Selected Projects}
+\renewcommand{\listitemsymbol}{-~}
+\cvlistitem{\textbf{Image Captioning}: design and implementation of an attention based model that automatically learns to generate a caption for images}
+\cvlistitem{\textbf{Image Shadow Removal}: create an illumination-invariant image as an intrinsic feature of an image (shadow-free invariant image)}
+\cvlistitem{\textbf{Sleep Monitoring System}: design and evaluate a Sleep Monitoring System using prototypes and doing user studies}
+\cvlistitem{\textbf{3D Content Creation}: generate new 3D models (chairs) by learning structural representations of 3D shapes}
+\cvlistitem{\textbf{Critical-Section Solution}: design and implementation of a Critical Section Handling in distributed systems}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATION SECTION
+%----------------------------------------------------------------------------------------
+\section{Publications}
+\renewcommand{\listitemsymbol}{-~}
+\cvlistitem{Approximate Minimum Diameter (Springer 2017)}
+\cvlistitem{Geometric Spanners for Points Inside a Polygonal Domain (SoCG 2015)}
+\cvlistitem{Unit Covering in Color-Spanning Set Model (Springer 2015)}
+\cvlistitem{Fast Approximation and Randomized Algorithms for Diameter (FWCG 2014)}
+
+% \section{Publications}
+% \renewcommand{\listitemsymbol}{-~}
+% \cvlistitem{Ghodsi, M., Homapour, H. and Seddighin, M., 2017, August. Approximate minimum diameter. In International Computing and Combinatorics Conference (pp. 237-249). Springer, Cham}
+% \cvlistitem{Abam, M.A., Adeli, M., Homapour, H. and Asadollahpoor, P.Z., 2015. Geometric spanners for points inside a polygonal domain. In 31st International Symposium on Computational Geometry (SoCG 2015). Schloss Dagstuhl-Leibniz-Zentrum fuer Informatik}
+% \cvlistitem{Emamjomeh-Zadeh, E., Ghodsi, M., Homapour, H. and Seddighin, M., 2015, February. Unit covering in color-spanning set model. In International Workshop on Algorithms and Computation (pp. 44-52). Springer, Cham.}
+% \cvlistitem{Alipour, S., Kalantari, B. and Homapour, H., 2014. Fast approximation and randomized algorithms for diameter. arXiv preprint arXiv:1410.2195}
+
+%----------------------------------------------------------------------------------------
+%	SELECTED COURSE WORK SECTION
+%----------------------------------------------------------------------------------------
+% \section{Selected Course Work}
+
+% \cvitem{\textbf{University}}{Deep Learning, Machine Learning, Human Computer Interaction (HCI), Game Theory, Randomized Algorithm, Approximation Algorithm, Massive Data Algorithms, Computationl Geometry, Advanced Algorithm, Data Structures and Programming}
+
+% \cvitem{\textbf{Online}}{Developing Scalable Apps with Java (with Google App Engine), Mobile Cloud Computing with Android}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+\section{Awards}
+
+\cvitem{2018}{Graduate Fellowship Award at Simon Fraser University}
+\cvitem{2017}{Graduate Fellowship Award at Simon Fraser University}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+% \section{Communication Skills}
+
+% \cvitem{2010}{Oral Presentation at the California Business Conference}
+% \cvitem{2009}{Poster at the Annual Business Conference in Oregon}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+% \section{Languages}
+
+% \cvitemwithcomment{Perisan}{Mothertongue}{}
+% \cvitemwithcomment{English}{Fluent}{}
+
+
+%----------------------------------------------------------------------------------------
+%	Volunteer SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Volunteering}
+\renewcommand{\listitemsymbol}{-~}
+\cvlistitem{The Global Community Mentorship Program (at SFU)}
+
+\cvlistitem{Tabestoon Festival (A music festival in Vancouver)}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistdoubleitem{Football}{Video games}
+\cvlistdoubleitem{Hiking}{Card games}
+\cvlistitem{Table tennis}
+\fi
+%----------------------------------------------------------------------------------------
+
+
+\end{document}
